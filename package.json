@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "npx jest",
-    "test:ci": "npx jest --runInBand"
+    "test:ci": "npx jest --runInBand --verbose"
   },
   "private": true,
   "dependencies": {
