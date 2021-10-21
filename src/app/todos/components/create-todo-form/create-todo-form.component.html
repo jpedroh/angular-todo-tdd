@@ -1,0 +1,8 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <input
+    [attr.aria-invalid]="hasControlError(DESCRIPTION_CONTROL)"
+    placeholder="Description"
+    [formControlName]="DESCRIPTION_CONTROL"
+  />
+  <button [disabled]="isSubmitDisabled" type="submit">Add</button>
+</form>
