@@ -1,0 +1,1 @@
+export type ActionEmitterDto<K, T> = { action: K, payload: T }

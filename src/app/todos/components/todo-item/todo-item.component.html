@@ -1,0 +1,6 @@
+<div>
+  <span>{{ todo.description }}</span>
+
+  <button *ngIf="isTodoPending" (click)="completeTodo()">Complete</button>
+  <button (click)="deleteTodo()">Delete</button>
+</div>
