@@ -1,0 +1,19 @@
+<app-create-todo-form
+  (onCreateTodo)="createTodo($event)"
+></app-create-todo-form>
+
+<label for="hideCompletedCheckbox">Hide completed</label>
+<input
+  id="hideCompletedCheckbox"
+  type="checkbox"
+  [formControl]="hideCompleted"
+/>
+
+<div role="list">
+  <app-todo-item
+    *ngFor="let todo of todosList | async"
+    role="listitem"
+    [todo]="todo"
+    (onAction)="handleTodoAction($event)"
+  ></app-todo-item>
+</div>
