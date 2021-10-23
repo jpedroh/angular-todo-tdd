@@ -5,11 +5,12 @@ import { CreateTodoFormComponent } from './components/create-todo-form/create-to
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import { TodosListComponent } from './containers/todos-list/todos-list.component';
 import { TodosState } from './state/todos.state';
+import { TodosRoutingModule } from './todos-routing.module';
 import { TodosFacade } from './todos.facade';
 
 @NgModule({
   declarations: [CreateTodoFormComponent, TodoItemComponent, TodosListComponent],
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, TodosRoutingModule],
   providers: [TodosFacade, TodosState]
 })
 export class TodosModule {}
